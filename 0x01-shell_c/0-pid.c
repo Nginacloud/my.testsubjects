@@ -5,12 +5,12 @@ int main(void)
 	int a = 3;
 	int b = 4;
 	int sum = a + b;
-	pid_t pid;
+	pid_t ppid;
 
-	pid = getpid();
+	ppid = getppid();/*pid for process*/
 
 	printf("sum of 3 and 4 is %d\n", sum);
-	printf("pid of this is %d\n", pid);
+	printf("ppid of this is %d\n", ppid);
 
 	return (0);
 }
